@@ -1,0 +1,8 @@
+lifecyle in terraform: control the out put of script
+meta argument
+implicit and explicit
+terraform functions
+multiple instances of prover
+provisionar
+user data
+dynamic block in terraform
