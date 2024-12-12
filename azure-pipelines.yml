@@ -18,14 +18,15 @@ steps:
     backendAzureRmContainerName: 'terracontainer'
     backendAzureRmKey: 'terraform.state'
 - task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'validate'
 - task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
     command: 'apply'
     environmentServiceNameAzureRM: 'Free Trial(1)(f855b573-cd07-43fa-b1c9-4e1ed6028799)'
-  inputs:
-    provider: 'azurerm'
-    command: 'validate'
+  
 - task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
